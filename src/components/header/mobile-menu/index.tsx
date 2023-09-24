@@ -3,11 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { BiChevronRight } from "react-icons/bi";
 import Accordion from "@/components/accordion";
-import {useTranslation} from "next-i18next";
 
 const MobileMenu = () => {
-  const { t } = useTranslation('common');
-
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
 
   const router = useRouter();
@@ -27,58 +24,58 @@ const MobileMenu = () => {
         <div className="relative top-1/2 px-10 -translate-y-1/2">
           <ul>
             <li className="flex justify-between items-center px-4 py-6 border-t-2 border-light-grey cursor-pointer">
-              <Link href="/" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.home')}</Link>
+              <Link href="/" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Home Page</Link>
               <BiChevronRight className="text-secondary text-3xl" />
             </li>
             <li className="flex justify-between items-center px-4 py-6 border-t-2 border-light-grey cursor-pointer">
-              <Accordion title={t('header.services')} link="/services">
+              <Accordion title="Services" link="/services">
                 <div className="pl-6">
                   <ul className="mt-4">
                     <li className="flex justify-between items-center py-4 border-t-2 border-light-grey cursor-pointer">
-                      <Accordion title={t('header.design')} link="/design">
+                      <Accordion title="Design" link="/design">
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/design/ui-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.ui_design')}</Link>
+                          <Link href="/design/ui-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>UI Design</Link>
                         </div>
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/design/ux-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.ux_design')}</Link>
+                          <Link href="/design/ux-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>UX Design</Link>
                         </div>
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/design/architecture-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.architecture_design')}</Link>
-                        </div>
-                      </Accordion>
-                    </li>
-                    <li className="flex justify-between items-center py-4 border-t-2 border-light-grey cursor-pointer">
-                      <Accordion title={t('header.development')} link="/development">
-                        <div className="flex items-center py-2">
-                          <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/development/web-apps" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.web_apps')}</Link>
-                        </div>
-                        <div className="flex items-center py-2">
-                          <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/development/backend" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.backend')}</Link>
-                        </div>
-                        <div className="flex items-center py-2">
-                          <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/development/mobile-apps" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.mobile_apps')}</Link>
+                          <Link href="/design/architecture-design" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Architecture Design</Link>
                         </div>
                       </Accordion>
                     </li>
                     <li className="flex justify-between items-center py-4 border-t-2 border-light-grey cursor-pointer">
-                      <Accordion title={t('header.power_up')} link="/power-up">
+                      <Accordion title="Development" link="/development">
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/power-up/app-store" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.apps')}</Link>
+                          <Link href="/development/web-apps" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Web Apps</Link>
                         </div>
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/power-up/devops" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.devOps')}</Link>
+                          <Link href="/development/backend" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Backend</Link>
                         </div>
                         <div className="flex items-center py-2">
                           <BiChevronRight className="text-secondary text-3xl" />
-                          <Link href="/power-up/infrastructure" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.infrastructure')}</Link>
+                          <Link href="/development/mobile-apps" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Mobile Apps</Link>
+                        </div>
+                      </Accordion>
+                    </li>
+                    <li className="flex justify-between items-center py-4 border-t-2 border-light-grey cursor-pointer">
+                      <Accordion title="Power up" link="/power-up">
+                        <div className="flex items-center py-2">
+                          <BiChevronRight className="text-secondary text-3xl" />
+                          <Link href="/power-up/app-store" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Apps</Link>
+                        </div>
+                        <div className="flex items-center py-2">
+                          <BiChevronRight className="text-secondary text-3xl" />
+                          <Link href="/power-up/devops" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>DevOps</Link>
+                        </div>
+                        <div className="flex items-center py-2">
+                          <BiChevronRight className="text-secondary text-3xl" />
+                          <Link href="/power-up/infrastructure" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Infrastructure</Link>
                         </div>
                       </Accordion>
                     </li>
@@ -87,23 +84,23 @@ const MobileMenu = () => {
               </Accordion>
             </li>
             <li className="flex justify-between items-center px-4 py-6 border-t-2 border-light-grey cursor-pointer">
-              <Link href="/projects" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.projects')}</Link>
+              <Link href="/projects" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Projects</Link>
               <BiChevronRight className="text-secondary text-3xl" />
             </li>
             <li className="flex justify-between items-center px-4 py-6 border-t-2 border-light-grey cursor-pointer">
-              <Accordion title={t('header.about_us')} link="/about-us">
+              <Accordion title="About Us" link="/about-us">
                 <div className="flex items-center py-2">
                   <BiChevronRight className="text-secondary text-3xl" />
-                  <Link href="/blog" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.blog')}</Link>
+                  <Link href="/blog" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Blog</Link>
                 </div>
                 <div className="flex items-center py-2">
                   <BiChevronRight className="text-secondary text-3xl" />
-                  <Link href="/career" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.career')}</Link>
+                  <Link href="/career" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Career</Link>
                 </div>
               </Accordion>
             </li>
             <li className="flex justify-between items-center px-4 py-6 border-t-2 border-light-grey cursor-pointer">
-              <Link href="/contact" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>{t('header.contact')}</Link>
+              <Link href="/contact" className="uppercase text-white font-bold" onClick={() => setMobileMenuOpened(false)}>Contact</Link>
               <BiChevronRight className="text-secondary text-3xl" />
             </li>
             {/*<li className="flex justify-center mt-8">*/}

@@ -1,10 +1,7 @@
 import Image from "next/image";
 import DevelopmentBanner from "@/images/development-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const DevelopmentBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,13 +40,13 @@ const DevelopmentBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('development.our')}</span>
-              <span className="block relative z-10 leading-snug">{t('development.coding')}</span>
-              <span className="block relative z-10 leading-snug">{t('development.services')}</span>
+              <span className="block relative z-10 leading-snug">Our</span>
+              <span className="block relative z-10 leading-snug">Coding</span>
+              <span className="block relative z-10 leading-snug">Services</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('development.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">Software is the code that makes people happy.</h5>
           </div>
         </div>
       </div>

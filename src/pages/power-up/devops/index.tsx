@@ -5,7 +5,6 @@ import DevOpsInteractionSection from "@/components/pages/power-up/devops/DevOpsI
 import DevOpsAdvantageSection from "@/components/pages/power-up/devops/DevOpsAdvantageSection";
 import DevOpsNextServiceSection from "@/components/pages/power-up/devops/DevOpsNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function DevOps() {
   return (
@@ -26,14 +25,4 @@ export default function DevOps() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

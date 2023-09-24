@@ -1,10 +1,7 @@
 import Image from "next/image";
 import IphoneAppImage from "@/images/design/iphone_app.png";
-import {useTranslation} from "next-i18next";
 
 const UXDesignResultSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
@@ -13,8 +10,8 @@ const UXDesignResultSection = () => {
             <Image src={IphoneAppImage} alt="Hire Design Team" className="w-full" />
           </div>
           <div className="flex-1">
-            <h4 className="text-black text-4xl font-bold mb-8">{t('ux_design.result')}</h4>
-            <p className="text-lg mt-4 mb-12">{t('ux_design.result_description')}</p>
+            <h4 className="text-black text-4xl font-bold mb-8">The result</h4>
+            <p className="text-lg mt-4 mb-12">Ultimately, we bring together all the essential aspects and the designers’ creative ideas to create a unique customer journey. This information provides the perfect basis for technical and strategic decisions.</p>
           </div>
         </div>
       </div>

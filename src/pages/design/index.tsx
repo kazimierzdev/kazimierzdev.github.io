@@ -6,7 +6,6 @@ import DesignCaseStudiesSection from "@/components/pages/design/DesignCaseStudie
 import DesignBlogSection from "@/components/pages/design/DesignBlogSection";
 import DesignNextServiceSection from "@/components/pages/design/DesignNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Design() {
   return (
@@ -28,14 +27,4 @@ export default function Design() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

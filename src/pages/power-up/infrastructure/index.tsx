@@ -7,7 +7,6 @@ import InfrastructurePublishingSection
 import InfrastructureNextServiceSection
   from "@/components/pages/power-up/infrastructure/InfrastructureNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Infrastructure() {
   return (
@@ -28,14 +27,4 @@ export default function Infrastructure() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

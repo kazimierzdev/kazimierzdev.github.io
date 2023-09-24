@@ -7,7 +7,6 @@ import DevelopmentAdvantageSection from "@/components/pages/development/Developm
 import DevelopmentBlogSection from "@/components/pages/development/DevelopmentBlogSection";
 import DevelopmentNextServiceSection from "@/components/pages/development/DevelopmentNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Development() {
   return (
@@ -30,14 +29,4 @@ export default function Development() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

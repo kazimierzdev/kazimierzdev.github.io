@@ -1,10 +1,7 @@
 import Image from "next/image";
 import PowerUpBanner from "@/images/powerup-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const PowerUpBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,13 +40,13 @@ const PowerUpBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('power_up.our')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('power_up.up')}</span>
-              <span className="block relative z-10 leading-snug">{t('power_up.services')}</span>
+              <span className="block relative z-10 leading-snug">Our power</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">Up</span>
+              <span className="block relative z-10 leading-snug">Services</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('power_up.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">Operate your apps with plenty of power and maximum performance.</h5>
           </div>
         </div>
       </div>

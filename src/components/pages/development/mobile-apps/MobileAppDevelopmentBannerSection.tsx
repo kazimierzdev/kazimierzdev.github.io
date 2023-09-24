@@ -1,10 +1,7 @@
 import Image from "next/image";
 import MobileDevelopmentBanner from "@/images/mobile-app-development-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const MobileAppDevelopmentBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,15 +40,15 @@ const MobileAppDevelopmentBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('mobile_apps.user')}</span>
-              <span className="block relative z-10 leading-snug">{t('mobile_apps.delight')}</span>
-              <span className="block relative z-10 leading-snug">{t('mobile_apps.always')}</span>
-              <span className="block relative z-10 leading-snug">{t('mobile_apps.and')}</span>
-              <span className="block relative z-10 leading-snug">{t('mobile_apps.everywhere')}</span>
+              <span className="block relative z-10 leading-snug">User</span>
+              <span className="block relative z-10 leading-snug">delight.</span>
+              <span className="block relative z-10 leading-snug">Always</span>
+              <span className="block relative z-10 leading-snug">and</span>
+              <span className="block relative z-10 leading-snug">everywhere.</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('mobile_apps.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">We create mobile apps for you that touch people emotionally and move them more.</h5>
           </div>
         </div>
       </div>

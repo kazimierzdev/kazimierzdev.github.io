@@ -1,10 +1,7 @@
 import Image from "next/image";
 import BlogBanner from "@/images/blog-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const BlogBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,11 +40,11 @@ const BlogBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 mb-12 lg:mb-0">{t('blog.title')}</span>
+              <span className="block relative z-10 mb-12 lg:mb-0">Blog</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:text-6xl mb-16 lg:mb-6 lg:ml-24">{t('blog.banner')}</h5>
+            <h5 className="text-white text-4xl md:text-6xl mb-16 lg:mb-6 lg:ml-24">In our blog we keep you up to date on current developments and trends from the web and mobile app industry.</h5>
           </div>
         </div>
       </div>

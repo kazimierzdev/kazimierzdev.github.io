@@ -9,7 +9,6 @@ import BackendDevelopmentCornerstonesSection
   from "@/components/pages/development/backend/BackendDevelopmentCornerstonesSection";
 import BackendDevelopmentNextServiceSection
   from "@/components/pages/development/backend/BackendDevelopmentNextServiceSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function BackendDevelopment() {
   return (
@@ -31,14 +30,4 @@ export default function BackendDevelopment() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

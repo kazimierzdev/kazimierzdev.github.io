@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BannerSection from "@/components/pages/home/BannerSection";
 import ProductsSection from "@/components/pages/home/ProductsSection";
 import ProcessSection from "@/components/process";
@@ -32,14 +31,4 @@ export default function Home() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

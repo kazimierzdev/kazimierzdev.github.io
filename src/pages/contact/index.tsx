@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Contactus from "@/components/contact-us";
 import ContactBannerSection from "@/components/pages/contact/ContactBannerSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Projects() {
   return (
@@ -18,14 +17,4 @@ export default function Projects() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

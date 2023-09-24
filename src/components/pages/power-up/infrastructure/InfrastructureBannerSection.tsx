@@ -1,10 +1,7 @@
 import Image from "next/image";
 import InfrastructureBanner from "@/images/infrastructure-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const InfrastructureBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,14 +40,14 @@ const InfrastructureBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('infrastructure.stable')}</span>
-              <span className="block relative z-10 leading-snug">{t('infrastructure.strong')}</span>
-              <span className="block relative z-10 leading-snug">{t('infrastructure.and')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('infrastructure.scalable')}</span>
+              <span className="block relative z-10 leading-snug">Stable,</span>
+              <span className="block relative z-10 leading-snug">strong</span>
+              <span className="block relative z-10 leading-snug">and</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">scalable</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-6">{t('infrastructure.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-6">A nice home for your software.</h5>
           </div>
         </div>
       </div>

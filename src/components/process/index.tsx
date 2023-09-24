@@ -1,10 +1,7 @@
 import Slider from "react-slick";
 import Link from "next/link";
-import {useTranslation} from "next-i18next";
 
 const ProcessSection = () => {
-  const { t } = useTranslation('common');
-
   const sliderSettings = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -39,33 +36,33 @@ const ProcessSection = () => {
 
   const processCards = [
     {
-      name: t('process.requirement'),
-      services: [t('process.free_initial'), t('process.ideas_requirement'), t('process.mvp_definition')]
+      name: 'Requirements check',
+      services: ['Free initial consultation', 'Ideas & requirements check', 'MVP definition']
     },
     {
-      name: t('process.concept'),
-      services: [t('process.wireframe'), t('process.moodboard'), t('process.technical_conception'), t('process.user_stories')]
+      name: 'concept',
+      services: ['Wireframing & Prototyping', 'Moodboard development', 'Technical conception', 'User stories & requirements']
     },
     {
-      name: t('process.design'),
-      services: [t('process.ui_interface'), t('process.ux_interface'), t('process.software')]
+      name: 'design',
+      services: ['UI | User interface design', 'UX | User experience design', 'Software architecture design']
     },
     {
-      name: t('process.development'),
-      services: [t('process.mobile_apps'), t('process.web_apps'), t('process.backend_apps')]
+      name: 'Development',
+      services: ['Mobile apps', 'Web apps', 'Backend apps']
     },
     {
-      name: t('process.operation'),
-      services: [t('process.apps'), t('process.infrastructure'), t('process.devOps')]
+      name: 'Operation',
+      services: ['Apps', 'infrastructure', 'DevOps']
     },
   ]
 
   return (
     <section className="py-36">
       <div className="container mx-auto px-8 md:px-0">
-        <h2 className="uppercase font-bold">{t('process.title')}</h2>
+        <h2 className="uppercase font-bold">OUR PROCESS</h2>
         <p className="xl:w-1/2 mt-4">
-          {t('process.description')}
+          The services we offer are seamlessly linked to our development process. This means that everything fits together perfectly – from the requirements check to ongoing operations. The entire app development process is designed so that you can get started flexibly at every stage.
         </p>
       </div>
       <Slider {...sliderSettings} className="xl:w-4/5 xl:mx-auto xl:block flex justify-center mt-20">
@@ -80,7 +77,7 @@ const ProcessSection = () => {
                 <h5 className="text-black text-3xl font-semibold">{process.name}</h5>
               </div>
             </Link>
-            <h6 className="text-center text-primary uppercase mt-10 mb-4">{t('process.service')}</h6>
+            <h6 className="text-center text-primary uppercase mt-10 mb-4">Service Content</h6>
             {process.services.map((service, sIndex) => (
               <p className="service-process text-center mb-12" key={`process-service-${index}-${sIndex}`}>
                 <Link href="/contact">

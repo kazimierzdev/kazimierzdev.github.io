@@ -6,7 +6,6 @@ import ServiceDesignSection from "@/components/pages/services/ServiceDesignSecti
 import ServiceDevelopmentSection from "@/components/pages/services/ServiceDevelopmentSection";
 import ServicePowerUpSection from "@/components/pages/services/ServicePowerUpSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Services() {
   return (
@@ -28,14 +27,4 @@ export default function Services() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

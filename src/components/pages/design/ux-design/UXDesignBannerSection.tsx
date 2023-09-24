@@ -1,10 +1,7 @@
 import Image from "next/image";
 import UXDesignBanner from "@/images/ux-design-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const UXDesignBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,13 +40,13 @@ const UXDesignBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('ux_design.digital')}</span>
-              <span className="block relative z-10 leading-snug">{t('ux_design.adventures')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('ux_design.create')}</span>
+              <span className="block relative z-10 leading-snug">Digital</span>
+              <span className="block relative z-10 leading-snug">adventures</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">create</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('ux_design.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">We connect users with experience. Very easy.</h5>
           </div>
         </div>
       </div>

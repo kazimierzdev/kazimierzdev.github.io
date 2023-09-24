@@ -1,10 +1,7 @@
 import Image from "next/image";
 import DomenicoImage from "@/images/development/domenico.jpg";
-import {useTranslation} from "next-i18next";
 
 const AppStoreFinalSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
@@ -13,10 +10,10 @@ const AppStoreFinalSection = () => {
             <Image src={DomenicoImage} alt="Hire Design Team" className="w-full" />
           </div>
           <div className="flex-1">
-            <h4 className="text-black text-4xl font-bold mb-8">{t('apps.testing')}</h4>
-            <p className="text-lg mt-4 mb-12">{t('apps.testing_description')}</p>
+            <h4 className="text-black text-4xl font-bold mb-8">Testing the final version</h4>
+            <p className="text-lg mt-4 mb-12">Before the final submission takes place, we provide a beta test version with which your mobile app can be checked by internal and external testers. It can then be submitted to Apple and Google for review. To avoid human and manual errors, we automate publishing for you while saving time.</p>
             <button className="btn bg-secondary px-20 py-4 font-bold text-white rounded uppercase">
-              {t('ask_free')}
+              Ask for free
             </button>
           </div>
         </div>

@@ -9,12 +9,8 @@ import AdamImage from "@/images/adam.jpg";
 import SodaImage from "@/images/soda.jpg";
 import BeerImage from "@/images/beer.jpg";
 import CedevitaImage from "@/images/cedevita.jpg";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import {useTranslation} from "next-i18next";
 
 export default function Projects() {
-  const { t } = useTranslation('common');
-
   return (
     <>
       <Head>
@@ -27,74 +23,74 @@ export default function Projects() {
         <section className="bg-dark-purple py-28">
           <div className="container mx-auto flex flex-col xl:flex-row px-8 md:px-0">
             <h2 className="text-white text-left text-7xl xl:text-9xl font-bold mb-8 xl:w-1/2">
-              <span className="block">{t('projects.our')}</span>
-              <span className="block">{t('projects.projects')}</span>
+              <span className="block">Our</span>
+              <span className="block">Projects</span>
             </h2>
-            <p className="text-white pt-4 xl:w-[240px] mb-16 xl:mb-0">{t('projects.description')}</p>
+            <p className="text-white pt-4 xl:w-[240px] mb-16 xl:mb-0">Excerpt from our web and mobile apps.</p>
           </div>
           <div className="container mx-auto px-8 md:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
               <div className="case-card relative overflow-hidden">
                 <Image src={MankidoImage} alt="Mankido app image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.mankido')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.mankido_app')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">MANKIDO</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">Mankido app</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={LogBookImage} alt="LogBook image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.salzburg_university')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.logbook')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">Salzburg University of Education</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">logbook</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={BuyingImage} alt="Rent instead of buying image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.needit_gmbh')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.needit_rent')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">NEEDIT GmbH</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">NEEDIT - Rent instead of buying</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={VendingImage} alt="Vending social image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.babos')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.vending_social')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">BABOS</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">Vending Social</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={WeImage} alt="We app image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.desert_red')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.we_app')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">Desert Red</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">We app</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={AdamImage} alt="ADAM app image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.desert_red')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.adam_app')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">Desert Red</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">ADAM app</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={SodaImage} alt="Soda Rental Club image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.hana_house')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.adam_app')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">HANA House</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">ADAM app</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={BeerImage} alt="Beer tasting image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.kalea')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.beer_tasting')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">Kalea</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">Beer tasting (2016 - 2019)</h4>
                 </div>
               </div>
               <div className="case-card relative overflow-hidden">
                 <Image src={CedevitaImage} alt="Beer tasting image" className="duration-300 w-full" />
                 <div className="absolute bottom-0 pl-12 pb-12 z-10">
-                  <h6 className="text-secondary uppercase font-bold">{t('projects.cedevita')}</h6>
-                  <h4 className="text-white text-3xl font-semibold w-3/4">{t('projects.cedevita_point')}</h4>
+                  <h6 className="text-secondary uppercase font-bold">Cedevita</h6>
+                  <h4 className="text-white text-3xl font-semibold w-3/4">Cedevita Point</h4>
                 </div>
               </div>
             </div>
@@ -103,14 +99,4 @@ export default function Projects() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

@@ -1,33 +1,30 @@
 import AdvantageCard from "@/components/cards/advantage-card";
-import {useTranslation} from "next-i18next";
 
 const UIDesignAdvantagesSection = () => {
-  const { t } = useTranslation('common');
-
   const advantages = [
     {
-      title: t('your_advantages.joy_creating'),
-      description: t('your_advantages.joy_creating_description')
+      title: 'Joy-creating apps',
+      description: 'One thing you should know. We don&apos;t just create software, we create enthusiastic users. These are people who enjoy using your app etc. - with a big grin on their face.'
     },
     {
-      title: t('your_advantages.advantage_design'),
-      description: t('your_advantages.advantage_design_description')
+      title: 'Advantage through design',
+      description: 'Good design creates desirability, simplicity, trust, usability and genuine user satisfaction. After all, what good is it if the app works perfectly but people don&apos;t like using it?'
     },
     {
-      title: t('your_advantages.everything_budget'),
-      description: t('your_advantages.everything_budget_description')
+      title: 'Everything within budget',
+      description: 'We ensure that your budget is used correctly to achieve or exceed your goals - with maximum planning security and no budget overruns.'
     },
     {
-      title: t('your_advantages.user_centered'),
-      description: t('your_advantages.user_centered_description')
+      title: 'User-centered software',
+      description: 'We develop for your target group and with your target group: software that integrates seamlessly into the digital lifestyle of your users.'
     },
     {
-      title: t('your_advantages.engineering_art'),
-      description: t('your_advantages.engineering_art_description')
+      title: 'European engineering art',
+      description: 'We are engineers and digital craftsmen who see software development as an art form. Because, just like with art, every digital product should be special and unique.'
     },
     {
-      title: t('your_advantages.good_investment'),
-      description: t('your_advantages.good_investment_description')
+      title: 'Good investment',
+      description: 'Software is an investment for us and our customers. A long-term investment – in the company’s digital future with real added value'
     },
   ];
 
@@ -35,7 +32,7 @@ const UIDesignAdvantagesSection = () => {
     <section className="bg-dark-purple py-28">
       <div className="container mx-auto px-8 md:px-0">
         <h2 className="text-white text-7xl xl:text-9xl font-bold lg:text-center mb-8">
-          {t('your_advantages.title')}
+          Your Advantages
         </h2>
       </div>
       <div className="container mx-auto px-8 md:px-0">

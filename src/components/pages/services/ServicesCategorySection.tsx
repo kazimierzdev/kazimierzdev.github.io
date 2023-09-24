@@ -2,39 +2,36 @@ import ServiceCard from "@/components/cards/service-card";
 import DesignServiceImage from "@/images/services/Design.jpg";
 import DevelopmentServiceImage from "@/images/services/Development.jpg";
 import PowerUpServiceImage from "@/images/services/Power_up.jpg";
-import {useTranslation} from "next-i18next";
 
 const ServicesCategorySection = () => {
-  const { t } = useTranslation('common');
-
   const services = [
     {
       image: DesignServiceImage,
-      title: t('header.design'),
-      description: t('header.design_description'),
-      flows: [t('header.ui_design'), t('header.ux_design'), t('header.architecture_design')]
+      title: 'Design',
+      description: 'Design and technology. Unbeatable in combination.',
+      flows: ['UI Design', 'UX Design', 'Architecture Design']
     },
     {
       image: DevelopmentServiceImage,
-      title: t('header.development'),
-      description: t('header.development_description'),
-      flows: [t('header.web_apps'), t('header.backend'), t('header.mobile_apps')]
+      title: 'Development',
+      description: 'Software is the code that makes people happy.',
+      flows: ['Web Apps', 'Backend', 'Mobile Apps']
     },
     {
       image: PowerUpServiceImage,
-      title: t('header.power_up'),
-      description: t('header.power_up_description'),
-      flows: [t('header.apps'), t('header.devOps'), t('header.infrastructure')]
+      title: 'Power up',
+      description: 'Operate your apps with plenty of power and maximum performance.',
+      flows: ['Apps', 'DevOps', 'Infrastructure']
     }
   ]
   return (
     <section className="py-28 bg-dark-purple">
       <div className="container mx-auto px-8 md:px-0">
-        <h2 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold">{t('services.service_manufacturer')}</h2>
+        <h2 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold">Services from the web and app manufacturer TechVoyageSolution</h2>
         <div className="flex justify-end mt-12">
           <div className="md:w-2/3">
             <p className="text-white relative leading-relaxed md:mr-12 service-category-text">
-              {t('services.service_manufacturer_description')}
+              You have to understand the interplay of concept, design, development and operation of the software and see each area as equally valuable. But the most important thing is the passion for high-quality software solutions. Only when everyone involved works with dedication and team spirit can solutions be created that people like to use. Choose quality and be surprised at how easy it is to develop your vision with the right team.
             </p>
           </div>
         </div>

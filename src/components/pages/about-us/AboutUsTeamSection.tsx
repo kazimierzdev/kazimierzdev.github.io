@@ -10,65 +10,62 @@ import Avatar9 from "@/images/avatars/armin.jpg";
 import Avatar10 from "@/images/avatars/umihana.jpg";
 import Avatar11 from "@/images/avatars/elvedin.jpg";
 import UserCard from "@/components/cards/user-card";
-import {useTranslation} from "next-i18next";
 
 const AboutUsTeamSection = () => {
-  const { t } = useTranslation('common');
-
   const members = [
     {
       image: Avatar1,
       name: 'Vernes',
-      role: t('our_team.managing_director')
+      role: 'MANAGING DIRECTOR'
     },
     {
       image: Avatar2,
       name: 'Philip',
-      role: t('our_team.prompt_engineer')
+      role: 'PM & PROMPT ENGINEER'
     },
     {
       image: Avatar3,
       name: 'Enis',
-      role: t('our_team.full_stack_developer')
+      role: 'FULL STACK DEVELOPER'
     },
     {
       image: Avatar4,
       name: 'Dinosaur',
-      role: t('our_team.art_director')
+      role: 'ART DIRECTOR'
     },
     {
       image: Avatar5,
       name: 'Haris',
-      role: t('our_team.frontend_developer')
+      role: 'FRONTEND DEVELOPER'
     },
     {
       image: Avatar6,
       name: 'Djulsa',
-      role: t('our_team.frontend_developer')
+      role: 'FRONTEND DEVELOPER'
     },
     {
       image: Avatar7,
       name: 'Berina',
-      role: t('our_team.frontend_developer')
+      role: 'FRONTEND DEVELOPER'
     },{
       image: Avatar8,
       name: 'Amil',
-      role: t('our_team.frontend_developer')
+      role: 'FRONTEND DEVELOPER'
     },
     {
       image: Avatar9,
       name: 'Armin',
-      role: t('our_team.frontend_developer')
+      role: 'FRONTEND DEVELOPER'
     },
     {
       image: Avatar10,
       name: 'Umihana (maternity leave)',
-      role: t('our_team.marketing')
+      role: 'MARKETING'
     },
     {
       image: Avatar11,
       name: 'Elvedin',
-      role: t('our_team.devOps')
+      role: 'DEVOPS'
     },
   ];
 
@@ -76,7 +73,7 @@ const AboutUsTeamSection = () => {
   return (
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
-        <h6 className="text-normal text-center font-bold uppercase tracking-widest mb-24">{t('our_team.title')}</h6>
+        <h6 className="text-normal text-center font-bold uppercase tracking-widest mb-24">Our Team</h6>
         <div className="grid grid-cold-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {members.map((member, index) => (
             <UserCard name={member.name} image={member.image} role={member.role} key={`user-card-${index}`} />

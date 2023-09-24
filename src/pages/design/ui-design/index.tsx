@@ -8,7 +8,6 @@ import UIDesignAdvantagesSection from "@/components/pages/design/ui-design/UIDes
 import UIDesignBlogSection from "@/components/pages/design/ui-design/UIDesignBlogSection";
 import UIDesignNextServiceSection from "@/components/pages/design/ui-design/UIDesignNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function UiDesign() {
   return (
@@ -32,14 +31,4 @@ export default function UiDesign() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

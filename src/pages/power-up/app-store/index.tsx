@@ -7,7 +7,6 @@ import AppStoreFinalSection from "@/components/pages/power-up/app-store/AppStore
 import AppStoreServiceSection from "@/components/pages/power-up/app-store/AppStoreServiceSection";
 import AppStoreNextServiceSection from "@/components/pages/power-up/app-store/AppStoreNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function AppStore() {
   return (
@@ -30,14 +29,4 @@ export default function AppStore() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

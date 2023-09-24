@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import {useTranslation} from "next-i18next";
 
 type ServiceCardProps = {
   image: string | StaticImageData;
@@ -8,8 +7,6 @@ type ServiceCardProps = {
   flows?: string[]
 }
 const ServiceCard = ({ image, title, description, flows }: ServiceCardProps) => {
-  const { t } = useTranslation('common');
-
   return (
     <div className="service-card cursor-pointer relative overflow-hidden flex flex-col">
       <div className="overflow-hidden relative image-wrapper">
@@ -29,7 +26,7 @@ const ServiceCard = ({ image, title, description, flows }: ServiceCardProps) => 
         )}
         <h5 className={`mb-4 text-white ${(flows && flows.length > 0) ? 'opacity-0 learn-more' : ''}`}>{description}</h5>
         <div className="text-secondary font-bold uppercase text-sm mt-auto">
-          <span className="opacity-0 learn-more border-b-2 border-secondary">{t('more_info')}</span>
+          <span className="opacity-0 learn-more border-b-2 border-secondary">More Info</span>
         </div>
       </div>
     </div>

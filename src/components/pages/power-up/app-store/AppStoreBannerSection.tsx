@@ -1,10 +1,7 @@
 import Image from "next/image";
 import AppStoreBanner from "@/images/app-store-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const AppStoreBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,13 +40,13 @@ const AppStoreBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-tight">{t('apps.live')}</span>
-              <span className="block relative z-10 leading-tight">{t('apps.scene')}</span>
-              <span className="block relative z-10 leading-tight text-transparent text-stroke">{t('apps.set')}</span>
+              <span className="block relative z-10 leading-tight">Live and</span>
+              <span className="block relative z-10 leading-tight">in scene</span>
+              <span className="block relative z-10 leading-tight text-transparent text-stroke">set</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('apps.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">We guide you through the app store submission process. From A like Apple to Z like certificates.</h5>
           </div>
         </div>
       </div>

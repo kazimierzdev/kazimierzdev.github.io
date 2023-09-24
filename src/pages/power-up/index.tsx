@@ -7,7 +7,6 @@ import PowerUpScalabilitySection from "@/components/pages/power-up/PowerUpScalab
 import PowerUpAvailabilitySection from "@/components/pages/power-up/PowerUpAvailableSection";
 import PowerUpNextServiceSection from "@/components/pages/power-up/PowerUpNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function PowerUp() {
   return (
@@ -30,14 +29,4 @@ export default function PowerUp() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

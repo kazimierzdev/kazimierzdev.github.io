@@ -2,26 +2,23 @@ import MankidoImage from "@/images/mankido.jpg";
 import LogBookImage from "@/images/logbook.jpg";
 import BuyingImage from "@/images/buying.jpg";
 import CaseCard from "@/components/cards/case-card";
-import {useTranslation} from "next-i18next";
 
 const CaseSection = () => {
-  const { t } = useTranslation('common');
-
   const caseItems = [
     {
       image: MankidoImage,
-      title: t('projects.mankido_app'),
-      type: t('projects.mankido')
+      title: 'Mankido app',
+      type: 'MANKIDO'
     },
     {
       image: LogBookImage,
-      title: t('projects.logbook'),
-      type: t('projects.salzburg_university')
+      title: 'logbook',
+      type: 'Salzburg University of Education'
     },
     {
       image: BuyingImage,
-      title: t('projects.needit_gmbh'),
-      type: t('projects.needit_rent')
+      title: 'NEEDIT GmbH',
+      type: 'NEEDIT - Rent instead of buying'
     }
   ];
 
@@ -29,8 +26,8 @@ const CaseSection = () => {
     <section className="bg-dark-purple py-28">
       <div className="container mx-auto px-8 md:px-0">
         <h2 className="text-white text-center lg:text-left text-7xl xl:text-9xl font-bold mb-8">
-          <span className="block">{t('case')}</span>
-          <span className="block">{t('studies')}</span>
+          <span className="block">Case</span>
+          <span className="block">studies</span>
         </h2>
       </div>
       <div className="container mx-auto px-8 md:px-0">

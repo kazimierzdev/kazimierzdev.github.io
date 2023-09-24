@@ -1,10 +1,7 @@
 import Image from "next/image";
 import AboutUsBanner from "@/images/about-us-banner.png";
-import {useTranslation} from "next-i18next";
 
 const AboutUsBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,12 +40,12 @@ const AboutUsBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('about_us.over')}</span>
-              <span className="block relative z-10 leading-snug">{t('about_us.us')}</span>
+              <span className="block relative z-10 leading-snug">Over</span>
+              <span className="block relative z-10 leading-snug">us</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl lg:ml-24 lg:mr-16 font-light pb-16 lg:pb-0">{t('about_us.banner')}</h5>
+            <h5 className="text-white text-4xl lg:ml-24 lg:mr-16 font-light pb-16 lg:pb-0">We are the app manufacturer where individual meets special and unique apps are created.</h5>
           </div>
         </div>
       </div>

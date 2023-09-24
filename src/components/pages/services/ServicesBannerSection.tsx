@@ -1,9 +1,7 @@
 import Image from "next/image";
 import ServicesBanner from "@/images/services-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const ServicesBannerSection = () => {
-  const { t } = useTranslation('common')
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">

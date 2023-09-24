@@ -1,9 +1,6 @@
 import Link from "next/link";
-import {useTranslation} from "next-i18next";
 
 const AboutUsProcessSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
@@ -74,25 +71,25 @@ const AboutUsProcessSection = () => {
           </svg>
             <div className="category absolute">
               <p className="text-secondary text-4xl font-bold">1.</p>
-              <p className="text-xl font-bold mt-8">{t('about_us.design')}</p>
+              <p className="text-xl font-bold mt-8">Design</p>
             </div>
             <div className="category absolute">
               <p className="text-secondary text-4xl font-bold">2.</p>
-              <p className="text-xl font-bold mt-8">{t('about_us.development')}</p>
+              <p className="text-xl font-bold mt-8">Development</p>
             </div>
             <div className="category absolute">
               <p className="text-secondary text-4xl font-bold">3.</p>
-              <p className="text-xl font-bold mt-8">{t('about_us.operation')}</p>
+              <p className="text-xl font-bold mt-8">Operation</p>
             </div>
           </div>
           <div className="flex flex-col justify-center">
             <div className="lg:w-2/3">
-              <h3 className="text-9xl font-bold mb-8">{t('about_us.our_process')}</h3>
+              <h3 className="text-9xl font-bold mb-8">Our Process</h3>
               <p className="text-light-grey lg:pl-6 text-xl leading-relaxed mb-8">
-                {t('about_us.our_process_description')}
+                The services we offer are seamlessly linked to our development process. This means that everything fits together perfectly – from the requirements check to ongoing operations. The entire app development process is designed so that you can get started flexibly at every stage.
               </p>
               <Link href="/career" className="text-secondary font-bold uppercase text-lg lg:pl-6">
-                {t('more_info')}
+                More Info
               </Link>
             </div>
           </div>

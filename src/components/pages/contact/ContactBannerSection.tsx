@@ -1,11 +1,8 @@
 import Image from "next/image";
 import ContactBanner from "@/images/contact-banner.jpg";
 import { FaLinkedin } from "react-icons/fa";
-import {useTranslation} from "next-i18next";
 
 const ContactBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -47,19 +44,19 @@ const ContactBannerSection = () => {
           </div>
           <div className="pb-12 md:pb-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6">
             <div>
-              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">{t('contact_us.send_us_email')}</h6>
+              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">SEND US AN EMAIL</h6>
               <h5 className="text-white text-2xl font-semibold mb-6">hello@techvoyagesolution.com</h5>
             </div>
             <div>
-              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">{t('contact_us.contact_us')}</h6>
+              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">CONTACT US</h6>
               <h5 className="text-white text-2xl font-semibold mb-6">Phone number</h5>
             </div>
             <div>
-              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">{t('contact_us.connect_with_us')}</h6>
+              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">CONNECT WITH US</h6>
               <FaLinkedin className="text-white text-2xl font-semibold mb-6" />
             </div>
             <div>
-              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">{t('contact_us.office')}</h6>
+              <h6 className="text-secondary uppercase text-sm font-extrabold tracking-wider mb-2">TECH VOYAGE OFFICE</h6>
               <h5 className="text-white text-2xl font-semibold mb-6">Office Address</h5>
             </div>
           </div>

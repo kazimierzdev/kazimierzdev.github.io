@@ -1,10 +1,7 @@
 import Image from "next/image";
 import GrowTikaImage from "@/images/devops/growtika.jpg";
-import {useTranslation} from "next-i18next";
 
 const DevOpsInteractionSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
@@ -13,10 +10,10 @@ const DevOpsInteractionSection = () => {
             <Image src={GrowTikaImage} alt="Hire Design Team" className="w-full" />
           </div>
           <div className="flex-1">
-            <h4 className="text-black text-5xl font-semibold mb-8">{t('devOps.interaction')}</h4>
-            <p className="text-lg mt-4 mb-12">{t('devOps.interaction_description')}</p>
+            <h4 className="text-black text-5xl font-semibold mb-8">Interaction with agile development</h4>
+            <p className="text-lg mt-4 mb-12">For the agile approach to work, the team involved must understand and want to implement the DevOps culture and benefits. It adopts new ways of working that increase collaboration, communication and customer focus. In this case, the customer is you. By applying DevOps, you benefit from faster releases, higher quality feedback, and regular troubleshooting.</p>
             <button className="btn bg-secondary px-20 py-4 font-bold text-white rounded uppercase">
-              {t('inquire_now')}
+              Inquire Now
             </button>
           </div>
         </div>

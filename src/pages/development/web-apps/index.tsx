@@ -9,7 +9,6 @@ import WebAppDevelopmentNextServiceSection
 import WebAppDevelopmentAdvantageSection
   from "@/components/pages/development/web-apps/WebAppDevelopmentAdvantageSection";
 import WebAppDevelopmentBlogSection from "@/components/pages/development/web-apps/WebAppDevelopmentBlogSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function WebAppDevelopment() {
   return (
@@ -32,14 +31,4 @@ export default function WebAppDevelopment() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

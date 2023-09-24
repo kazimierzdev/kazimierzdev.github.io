@@ -6,7 +6,6 @@ import AboutUsTeamSection from "@/components/pages/about-us/AboutUsTeamSection";
 import AboutUsApplySection from "@/components/pages/about-us/AboutUsApplySection";
 import AboutUsGuideSection from "@/components/pages/about-us/AboutUsGuideSection";
 import AboutUsProcessSection from "@/components/pages/about-us/AboutUsProcessSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function AboutUs() {
   return (
@@ -28,14 +27,4 @@ export default function AboutUs() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

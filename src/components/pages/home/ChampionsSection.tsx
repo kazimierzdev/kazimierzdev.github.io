@@ -9,11 +9,8 @@ import MankidoLogo from "@/images/champions/mankido.png";
 import PdsLogo from "@/images/champions/pds.png";
 import SommerauserLogo from "@/images/champions/sommerauer.png";
 import WuestenrotLogo from "@/images/champions/wuestenrot.png";
-import {useTranslation} from "next-i18next";
 
 const ChampionsSection = () => {
-  const { t } = useTranslation('common');
-
   const logos = [
     {
       src: EnBwLogo,
@@ -61,7 +58,7 @@ const ChampionsSection = () => {
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
         <div className="flex flex-col items-center">
-          <h2 className="text-center uppercase text-sm font-bold">{t('hidden_champions')}</h2>
+          <h2 className="text-center uppercase text-sm font-bold">A SELECTION OF OUR CUSTOMERS IN THE FIELD OF MOBILE AND WEB APP DEVELOPMENT: START-UPS, MARKET LEADERS AND HIDDEN CHAMPIONS.</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-7">
             {logos.map((logo, index) => (
               <div className="logo-card my-4" key={`logo-${index}`}>

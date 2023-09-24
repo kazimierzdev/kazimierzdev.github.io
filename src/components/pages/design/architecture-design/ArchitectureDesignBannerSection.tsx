@@ -1,10 +1,7 @@
 import Image from "next/image";
 import ArchitectureDesignBanner from "@/images/architecture-design-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const ArchitectureDesignBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,13 +40,13 @@ const ArchitectureDesignBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('architecture_design.stable')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('architecture_design.software')}</span>
-              <span className="block relative z-10 leading-snug">{t('architecture_design.build')}</span>
+              <span className="block relative z-10 leading-snug">Stable</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">software</span>
+              <span className="block relative z-10 leading-snug">build</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('architecture_design.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">A complex digital world requires simple solutions.</h5>
           </div>
         </div>
       </div>

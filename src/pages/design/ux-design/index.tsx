@@ -8,7 +8,6 @@ import UXDesignAdvantagesSection from "@/components/pages/design/ux-design/UXDes
 import UXDesignBlogSection from "@/components/pages/design/ux-design/UXDesignBlogSection";
 import UXDesignNextServiceSection from "@/components/pages/design/ux-design/UXDesignNextServiceSection";
 import Contactus from "@/components/contact-us";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function UxDesign() {
   return (
@@ -32,14 +31,4 @@ export default function UxDesign() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

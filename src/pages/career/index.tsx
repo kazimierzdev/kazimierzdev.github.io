@@ -1,11 +1,7 @@
 import Head from "next/head";
 import CareerBannerSection from "@/components/pages/career/CareerBannerSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
-import {useTranslation} from "next-i18next";
 
 export default function Career() {
-  const { t } = useTranslation('common');
-
   return (
     <>
       <Head>
@@ -20,18 +16,18 @@ export default function Career() {
           <div className="container mx-auto px-8 lg:px-0 border-b border-light-grey">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="lg:w-2/3">
-                <h3 className="text-7xl font-bold leading-snug">{t('career.international_team')}</h3>
+                <h3 className="text-7xl font-bold leading-snug">Become part of an international team</h3>
               </div>
               <div className="lg:w-3/5">
-                <p className="leading-relaxed mt-8 text-light-grey">{t('career.program_development')}</p>
-                <p className="leading-relaxed mt-8 text-light-grey">{t('career.exactly_candidate')}</p>
-                <p className="leading-relaxed mt-8 text-light-grey">{t('career.talented_developers')}</p>
-                <p className="leading-relaxed mt-8 text-light-grey">{t('career.contribute_skills')}</p>
+                <p className="leading-relaxed mt-8 text-light-grey">Do you program and are at the top of your game in full-stack development of mobile apps, desktop apps and multi-platform applications?</p>
+                <p className="leading-relaxed mt-8 text-light-grey">Then you are exactly the right candidate for our factory headquartered in Salzburg!</p>
+                <p className="leading-relaxed mt-8 text-light-grey">We&apos;re looking for talented developers like you to join our team. Browse through our open positions or send us an unsolicited application!</p>
+                <p className="leading-relaxed mt-8 text-light-grey">Join us now and contribute your skills and ideas to our dynamic working environment!</p>
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="lg:w-3/5">
-                <h3 className="text-7xl font-bold leading-snug my-28">{t('career.open_positions')}</h3>
+                <h3 className="text-7xl font-bold leading-snug my-28">Open positions</h3>
               </div>
             </div>
           </div>
@@ -42,7 +38,7 @@ export default function Career() {
                 <p className="">38.5</p>
                 <p className="">Salzburg</p>
                 <div className="text-secondary font-bold uppercase text-sm">
-                  <span className="border-b-2 border-secondary">{t('more_info')}</span>
+                  <span className="border-b-2 border-secondary">MORE INFO</span>
                 </div>
               </div>
             </div>
@@ -51,14 +47,4 @@ export default function Career() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

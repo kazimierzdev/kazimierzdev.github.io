@@ -3,31 +3,28 @@ import BlogTwoImage from "@/images/blogs/blog-23.jpg";
 import BlogThreeImage from "@/images/blogs/blog-27.jpg";
 import BlogCard from "@/components/cards/blog-card";
 import Link from "next/link";
-import {useTranslation} from "next-i18next";
 
 const UXDesignBlogSection = () => {
-  const { t } = useTranslation('common');
-
   const blogs = [
     {
       image: BlogTwoImage,
-      title: t('blog.optimizing_usability'),
-      description: t('blog.optimizing_usability_description')
+      title: '3 tips for optimizing usability in frontend development',
+      description: "User-friendliness plays an important role in front-end development. Learn how to improve user experience and make your website or application more intuitive."
     },
     {
       image: BlogThreeImage,
-      title: t('blog.progressive_web_app')
+      title: 'Progressive Web Apps (PWAs). What are they and what can they do?'
     },
     {
       image: BlogOneImage,
-      title: t('blog.why_companies')
+      title: 'Why companies should rely on mobile apps'
     }
   ];
 
   return (
     <section className="py-28 bg-dark-purple">
       <div className="container mx-auto px-8 md:px-0">
-        <h6 className="text-normal text-center font-bold uppercase tracking-widest mb-12 text-white">{t('blog.relevant_blog')}</h6>
+        <h6 className="text-normal text-center font-bold uppercase tracking-widest mb-12 text-white">RELEVANT BLOG ARTICLES</h6>
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-7">
           {blogs.map((blog, index) => (
             <BlogCard image={blog.image} title={blog.title} description={blog.description} key={`blog-${index}`} />
@@ -35,7 +32,7 @@ const UXDesignBlogSection = () => {
         </div>
         <div className="flex justify-center">
           <Link href="/blog" className="btn bg-secondary px-20 py-4 font-bold text-white rounded uppercase mt-12">
-            {t('all_articles')}
+            All Articles
           </Link>
         </div>
       </div>

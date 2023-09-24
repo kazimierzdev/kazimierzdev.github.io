@@ -29,131 +29,128 @@ import Blog27Image from "@/images/blogs/blog-27.jpg";
 import Blog28Image from "@/images/blogs/blog-28.png";
 import Blog29Image from "@/images/blogs/blog-29.png";
 import Blog30Image from "@/images/blogs/blog-30.png";
-import {useTranslation} from "next-i18next";
 
 const BlogListSection = () => {
-  const { t } = useTranslation('common');
-
   const blogs = [
     {
       image: Blog1Image,
-      title: t('blog.ai_chatbot')
+      title: '2023 - The year of the AI chatbot: customer communication through chatbot'
     },
     {
       image: Blog2Image,
-      title: t('blog.cross_platform')
+      title: 'Cross Platform Development: Pros and Cons for Modern App Development'
     },
     {
       image: Blog3Image,
-      title: t('blog.productivity_boost')
+      title: 'Productivity boost with individual software solutions'
     },
     {
       image: Blog4Image,
-      title: t('blog.responsive_design')
+      title: 'Responsive Design: Optimization of B2B applications on end devices'
     },
     {
       image: Blog5Image,
-      title: t('blog.app_developed')
+      title: 'Have your own app developed'
     },
     {
       image: Blog6Image,
-      title: t('blog.success_factor')
+      title: 'Success factor B2B applications'
     },
     {
       image: Blog7Image,
-      title: t('blog.formula_application')
+      title: 'UX and UI Design: The formula for success for B2B applications'
     },
     {
       image: Blog8Image,
-      title: t('blog.internet_definition')
+      title: 'The Internet of Things (IoT): Definition and examples for B2B applications'
     },
     {
       image: Blog9Image,
-      title: t('blog.big_question')
+      title: 'The big question mark in software development: standard software vs. individual development?'
     },
     {
       image: Blog10Image,
-      title: t('blog.future_development')
+      title: 'The future of B2B app development'
     },
     {
       image: Blog11Image,
-      title: t('blog.artificial_intelligence')
+      title: 'Artificial intelligence and machine learning in B2B app development'
     },
     {
       image: Blog12Image,
-      title: t('blog.cloud_computing')
+      title: 'Cloud Computing in B2B App Development: Benefits and Applications'
     },
     {
       image: Blog13Image,
-      title: t('blog.future_software')
+      title: 'The future of software development: Discover the benefits of ChatGPT'
     },
     {
       image: Blog14Image,
-      title: t('blog.master_chatgpt')
+      title: "Master ChatGPT and unleash your creativity with TechVoyageSolution's revolutionary prompt generator"
     },
     {
       image: Blog15Image,
-      title: t('blog.maximize_devops')
+      title: 'Maximize your DevOps efficiency with a robust infrastructure'
     },
     {
       image: Blog16Image,
-      title: t('blog.component_development')
+      title: '10 tips for successful component development in agile teams'
     },
     {
       image: Blog17Image,
-      title: t('blog.optimizing_usability')
+      title: '3 tips for optimizing usability in frontend development'
     },
     {
       image: Blog18Image,
-      title: t('blog.successful_requirements')
+      title: '5 steps to a successful requirements check'
     },
     {
       image: Blog19Image,
-      title: t('blog.app_programmed')
+      title: 'How much does it cost to have an app programmed?'
     },
     {
       image: Blog20Image,
-      title: t('blog.standardized_individualization')
+      title: 'Standardized individualization in the development of web and mobile apps'
     },
     {
       image: Blog21Image,
-      title: t('blog.progressive_web_app')
+      title: 'Progressive Web Apps (PWAs). What are they and what can they do?'
     },
     {
       image: Blog22Image,
-      title: t('blog.angular_advantages')
+      title: 'Angular and its advantages when used in enterprise apps'
     },
     {
       image: Blog23Image,
-      title: t('blog.difference_between')
+      title: 'The difference between hybrid apps, native apps and cross-platform apps'
     },
     {
       image: Blog24Image,
-      title: t('blog.outsourcing_software')
+      title: 'Advantages and disadvantages of outsourcing software projects'
     },
     {
       image: Blog25Image,
-      title: t('blog.why_companies')
+      title: 'Why companies should rely on mobile apps'
     },
     {
       image: Blog26Image,
-      title: t('blog.individual_software')
+      title: '7 good reasons for individual software development'
     },
     {
       image: Blog27Image,
-      title: t('blog.successful_app')
+      title: 'How to implement a successful app idea'
     },
     {
       image: Blog28Image,
-      title: t('blog.agile_software_development')
+      title: 'Agile software development - what it is and why we work with it'
     },
     {
       image: Blog29Image,
-      title: t('blog.right_software_solution')
+      title: 'Three ways to find the right software solution'
     },
     {
       image: Blog30Image,
-      title: t('blog.digital_transformation')
+      title: 'Digital transformation and its effects on companies'
     },
   ];
 
@@ -161,7 +158,7 @@ const BlogListSection = () => {
     <section className="py-28">
       <div className="container mx-auto px-8 md:px-0">
         <div className="flex flex-col items-center">
-          <h2 className="text-center uppercase text-sm font-bold mb-12">{t('blog.title')}</h2>
+          <h2 className="text-center uppercase text-sm font-bold mb-12">Blog</h2>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-7">
             {blogs.map((blog, index) => (
               <BlogCard image={blog.image} title={blog.title} key={`blog-${index}`} />

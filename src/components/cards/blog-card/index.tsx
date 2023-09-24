@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import {useTranslation} from "next-i18next";
 
 type BlogCardProps = {
   image: string | StaticImageData;
@@ -7,8 +6,6 @@ type BlogCardProps = {
   description?: string;
 }
 const BlogCard = ({ image, title, description }: BlogCardProps) => {
-  const { t } = useTranslation('common');
-
   return (
     <div className="blog-card bg-white cursor-pointer relative overflow-hidden shadow-xl flex flex-col">
       <div className="overflow-hidden relative">
@@ -18,7 +15,7 @@ const BlogCard = ({ image, title, description }: BlogCardProps) => {
         <h5 className="text-2xl	font-bold mb-8">{title}</h5>
         {description && <h5 className="text-lg mb-4 -mt-4">{description}</h5>}
         <div className="text-secondary font-bold uppercase text-sm mt-auto">
-          <span className="">{t('more_info')}</span>
+          <span className="">More Info</span>
         </div>
       </div>
     </div>

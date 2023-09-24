@@ -18,7 +18,6 @@ import MobileAppDevelopmentNextServiceSection
 import Contactus from "@/components/contact-us";
 import MobileAppDevelopmentSolutionSection
   from "@/components/pages/development/mobile-apps/MobileAppDevelopmentSolutionSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function MobileAppDevelopment() {
   return (
@@ -43,14 +42,4 @@ export default function MobileAppDevelopment() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

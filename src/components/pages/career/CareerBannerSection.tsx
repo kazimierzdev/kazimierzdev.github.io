@@ -1,10 +1,7 @@
 import Image from "next/image";
 import CareerBanner from "@/images/career-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const CareerBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,12 +40,12 @@ const CareerBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('career.join')}</span>
-              <span className="block relative z-10 leading-snug">{t('career.now')}</span>
+              <span className="block relative z-10 leading-snug">Join us</span>
+              <span className="block relative z-10 leading-snug">now!</span>
             </h1>
           </div>
           <div className="lg:w-1/2">
-            <h5 className="text-white text-6xl mb-16 lg:mb-6 lg:ml-24">{t('career.banner')}</h5>
+            <h5 className="text-white text-6xl mb-16 lg:mb-6 lg:ml-24">Apply now!</h5>
           </div>
         </div>
       </div>

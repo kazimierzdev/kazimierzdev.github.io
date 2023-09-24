@@ -1,7 +1,6 @@
 import Head from "next/head";
 import BlogBannerSection from "@/components/pages/blog/BlogBannerSection";
 import BlogListSection from "@/components/pages/blog/BlogListSection";
-import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 export default function Blog() {
   return (
@@ -18,14 +17,4 @@ export default function Blog() {
       </main>
     </>
   )
-}
-
-export async function getStaticProps(context: any) {
-  const { locale } = context
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale)),
-    },
-  }
 }

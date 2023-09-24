@@ -1,10 +1,7 @@
 import Image from "next/image";
 import UIDesignBanner from "@/images/ui-design-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const UIDesignBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,14 +40,14 @@ const UIDesignBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('ui_design.head')}</span>
-              <span className="block relative z-10 leading-snug">{t('ui_design.start')}</span>
-              <span className="block relative z-10 leading-snug">{t('ui_design.with')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('ui_design.design')}</span>
+              <span className="block relative z-10 leading-snug">head</span>
+              <span className="block relative z-10 leading-snug">Start</span>
+              <span className="block relative z-10 leading-snug">with</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">design</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('ui_design.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">For us, every single pixel that creates digital joy and uniqueness counts.</h5>
           </div>
         </div>
       </div>

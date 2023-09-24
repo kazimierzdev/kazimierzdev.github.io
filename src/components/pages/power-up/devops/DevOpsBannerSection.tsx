@@ -1,10 +1,7 @@
 import Image from "next/image";
 import DevOpsBanner from "@/images/devops-banner.jpg";
-import {useTranslation} from "next-i18next";
 
 const DevOpsBannerSection = () => {
-  const { t } = useTranslation('common');
-
   return (
     <section className="section-hero relative min-h-[540px] pt-[160px] md:pt-[120px] overflow-hidden">
       <div className="absolute h-full w-full left-0 top-0 overflow-hidden">
@@ -43,14 +40,14 @@ const DevOpsBannerSection = () => {
                   </g>
                 </svg>
               </div>
-              <span className="block relative z-10 leading-snug">{t('devOps.from')}</span>
-              <span className="block relative z-10 leading-snug">{t('devOps.code')}</span>
-              <span className="block relative z-10 leading-snug">{t('devOps.for')}</span>
-              <span className="block relative z-10 leading-snug text-transparent text-stroke">{t('devOps.product')}</span>
+              <span className="block relative z-10 leading-snug">From</span>
+              <span className="block relative z-10 leading-snug">code</span>
+              <span className="block relative z-10 leading-snug">for the</span>
+              <span className="block relative z-10 leading-snug text-transparent text-stroke">product</span>
             </h1>
           </div>
           <div className="lg:w-7/12">
-            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">{t('devOps.banner')}</h5>
+            <h5 className="text-white text-4xl md:ml-24 mb-16 md:mb-0">The perfect symbiosis between development and operations.</h5>
           </div>
         </div>
       </div>
