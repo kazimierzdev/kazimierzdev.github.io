@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90286802.css",
-    "main.js": "/static/js/main.e89b6f78.js",
+    "main.css": "/static/css/main.86ba1554.css",
+    "main.js": "/static/js/main.2d0dfbe3.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/domenico.jpg": "/static/media/domenico.56bf0765011ee17e3dd1.jpg",
     "static/media/about-us-banner.png": "/static/media/about-us-banner.acd0cee53d6f05b60127.png",
@@ -94,12 +94,12 @@
     "static/media/triple-hexta.svg": "/static/media/triple-hexta.5cdc63eb47c2eae84eaa92f19ea0becf.svg",
     "static/media/double-hexta.svg": "/static/media/double-hexta.c137ed6542ebb93322bf160f33ba8048.svg",
     "index.html": "/index.html",
-    "main.90286802.css.map": "/static/css/main.90286802.css.map",
-    "main.e89b6f78.js.map": "/static/js/main.e89b6f78.js.map",
+    "main.86ba1554.css.map": "/static/css/main.86ba1554.css.map",
+    "main.2d0dfbe3.js.map": "/static/js/main.2d0dfbe3.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90286802.css",
-    "static/js/main.e89b6f78.js"
+    "static/css/main.86ba1554.css",
+    "static/js/main.2d0dfbe3.js"
   ]
 }
