@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.f88fc466.css",
-    "main.js": "/static/js/main.390a7477.js",
+    "main.js": "/static/js/main.ef74ea85.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/domenico.jpg": "/static/media/domenico.56bf0765011ee17e3dd1.jpg",
+    "static/media/feryanto.png": "/static/media/feryanto.bf0398d7afa75834e9c7.png",
+    "static/media/manik.png": "/static/media/manik.1c0143a4c727648a77bb.png",
     "static/media/about-us-banner.png": "/static/media/about-us-banner.acd0cee53d6f05b60127.png",
     "static/media/growtika.jpg": "/static/media/growtika.866ab2e7d6c1cceab91e.jpg",
     "static/media/iphone_app.png": "/static/media/iphone_app.332a8f6547739b296771.png",
     "static/media/ionic_program.png": "/static/media/ionic_program.c93a64742ba5bd7ab9d5.png",
     "static/media/flutter_app.png": "/static/media/flutter_app.bef81dae664e0c714334.png",
     "static/media/vending.png": "/static/media/vending.844d52499fc948e6a49f.png",
+    "static/media/permadi.png": "/static/media/permadi.0f7874f6fc89877958cb.png",
     "static/media/design-banner.jpg": "/static/media/design-banner.6523753a9515d07fef30.jpg",
     "static/media/app-store-banner.jpg": "/static/media/app-store-banner.f0f19b76c2713698db2c.jpg",
     "static/media/blog-banner.jpg": "/static/media/blog-banner.f0f19b76c2713698db2c.jpg",
@@ -95,11 +98,11 @@
     "static/media/double-hexta.svg": "/static/media/double-hexta.c137ed6542ebb93322bf160f33ba8048.svg",
     "index.html": "/index.html",
     "main.f88fc466.css.map": "/static/css/main.f88fc466.css.map",
-    "main.390a7477.js.map": "/static/js/main.390a7477.js.map",
+    "main.ef74ea85.js.map": "/static/js/main.ef74ea85.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f88fc466.css",
-    "static/js/main.390a7477.js"
+    "static/js/main.ef74ea85.js"
   ]
 }
